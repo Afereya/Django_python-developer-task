@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<div class="col-lg-8">
+    <form action="{% url 'blog_login' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name="next" value='{{next}}'>
+        <input type="submit" value="Enter" class="btn btn-default"/>
+    </form>
+</div>
+{% endblock %}
