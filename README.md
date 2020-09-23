@@ -1,4 +1,4 @@
-# git_myProject
+# Django_python-developer-task
 
 Тестовое задание для начинающего Python-разработчика.
 
